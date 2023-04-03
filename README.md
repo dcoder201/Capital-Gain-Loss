@@ -30,7 +30,12 @@ The query result format is in the following example.
 Example 1:
 
 Input: 
+
+
 Stocks table:
+-------------------------------------------------------
+
+
 +---------------+-----------+---------------+--------+
 | stock_name    | operation | operation_day | price  |
 +---------------+-----------+---------------+--------+
@@ -45,7 +50,14 @@ Stocks table:
 | Handbags      | Sell      | 29            | 7000   |
 | Corona Masks  | Sell      | 10            | 10000  |
 +---------------+-----------+---------------+--------+
+
+
+
+
 Output: 
+-------------------------------------------------
+
+
 +---------------+-------------------+
 | stock_name    | capital_gain_loss |
 +---------------+-------------------+
@@ -53,6 +65,8 @@ Output:
 | Leetcode      | 8000              |
 | Handbags      | -23000            |
 +---------------+-------------------+
+
+
 Explanation: 
 Leetcode stock was bought at day 1 for 1000$ and was sold at day 5 for 9000$. Capital gain = 9000 - 1000 = 8000$.
 Handbags stock was bought at day 17 for 30000$ and was sold at day 29 for 7000$. Capital loss = 7000 - 30000 = -23000$.
